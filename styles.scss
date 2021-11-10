@@ -224,7 +224,58 @@ body {
 
     }
 
-    @media screen and (max-width:375px) {
+    @media screen and (max-width:1080px) {
+
+        .container{
+            width: 70vw;
+        height: 50vh;
+        }
+
+    }
+
+    @media screen and (max-width:990px) {
+
+        .container{
+            width: 80vw;
+        height: 50vh;
+            .info{
+                .left-info{
+                    .title, span{
+                        font-size: 25px;
+                    }
+
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:895px) {
+
+        .container{
+            width: 80vw;
+        height: 50vh;
+            .info{
+                .left-info{
+                    padding: 5%;
+                    .title, span{
+                        font-size: 24px;
+                        margin-top: 0;
+                        width: 100%;
+                    }
+
+                    p{
+                        font-size: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:475px) {
         .container {
             margin: 0%;
             background-color: #fff;
@@ -291,8 +342,8 @@ body {
                             width: 17%;
                             height: 45px;
                             margin-top: 15px;
-                            left: 73%;
-                            top: 52%;
+                            left: 75%;
+                            top: 50%;
 
                             .btn {
                                 height: 25px;

@@ -19,12 +19,15 @@ btn.addEventListener('click',()=>{
     var re=/\S+@\S+\.\S+/;
     if(valor.value.match(re)){
         // alert("valid mail");
+        err.classList.remove('active');
+        txt.classList.remove('activo')
+        valor.value="";
         return true;
         
     }else{
         // alert("not a valid mail");
-        err.classList.toggle('active');
-        txt.classList.toggle('activo')
+        err.classList.add('active');
+        txt.classList.add('activo')
         console.log("no")
         return false;
     }

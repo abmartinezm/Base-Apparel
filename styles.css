@@ -8,25 +8,23 @@
   /*### Gradients*/
   --Gradient1: linear-gardient(135deg, from hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --btn-linear-gradient: linear-gradient(135deg,
-            hsl(0, 80%, 86%),
-            hsl(0, 74%, 74%));
+          hsl(0, 80%, 86%),
+          hsl(0, 74%, 74%));
 }
 
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 16px;
   background-color: var(--Gradient1);
 }
-
 body .container {
   margin: 15% 10%;
   background-color: #fff;
@@ -34,43 +32,28 @@ body .container {
   height: 50vh;
   margin-right: auto;
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  flex-direction: column;
 }
-
 body .container .info {
   width: 100%;
   height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 body .container .info .left-info {
   width: 60%;
   height: 100%;
   padding: 60px;
   padding-top: 30px;
 }
-
 body .container .info .left-info .img img {
   width: 65px;
   height: 20px;
   margin-bottom: 30px;
 }
-
 body .container .info .left-info .title {
   color: var(--Desaturated-Red);
   text-transform: uppercase;
@@ -79,11 +62,9 @@ body .container .info .left-info .title {
   font-weight: 100;
   letter-spacing: 8px;
 }
-
 body .container .info .left-info span {
   color: #000;
 }
-
 body .container .info .left-info p {
   width: 78%;
   font-weight: 300;
@@ -91,15 +72,11 @@ body .container .info .left-info p {
   font-size: 10px;
   line-height: 18px;
 }
-
 body .container .info .left-info .btn-arrow {
   width: 100%;
   height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 body .container .info .left-info .btn-arrow input {
   height: 40px;
   border-radius: 25px;
@@ -108,31 +85,13 @@ body .container .info .left-info .btn-arrow input {
   margin-top: 15px;
   border: 1px ridge var(--Desaturated-Red);
 }
-
 body .container .info .left-info .btn-arrow input.active {
   border: 1px ridge var(--Desaturated-Red);
 }
-
-body .container .info .left-info .btn-arrow input::-webkit-input-placeholder {
-  color: var(--Desaturated-Red);
-  font-size: 10px;
-}
-
-body .container .info .left-info .btn-arrow input:-ms-input-placeholder {
-  color: var(--Desaturated-Red);
-  font-size: 10px;
-}
-
-body .container .info .left-info .btn-arrow input::-ms-input-placeholder {
-  color: var(--Desaturated-Red);
-  font-size: 10px;
-}
-
 body .container .info .left-info .btn-arrow input::placeholder {
   color: var(--Desaturated-Red);
   font-size: 10px;
 }
-
 body .container .info .left-info .btn-arrow .clk {
   width: 70px;
   height: 40px;
@@ -142,11 +101,9 @@ body .container .info .left-info .btn-arrow .clk {
   left: 35%;
   display: block;
   border-radius: 25px;
-  -webkit-box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
-          box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
+  box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
   cursor: pointer;
 }
-
 body .container .info .left-info .btn-arrow .clk .error {
   position: absolute;
   margin-top: 10px;
@@ -155,11 +112,9 @@ body .container .info .left-info .btn-arrow .clk .error {
   height: 20px;
   visibility: hidden;
 }
-
 body .container .info .left-info .btn-arrow .clk .error.active {
   visibility: visible;
 }
-
 body .container .info .left-info .btn-arrow .clk .btn {
   height: 15px;
   width: 10px;
@@ -169,7 +124,6 @@ body .container .info .left-info .btn-arrow .clk .btn {
   z-index: 200;
   cursor: pointer;
 }
-
 body .container .info .left-info .btn-arrow .mail {
   width: 35%;
   position: absolute;
@@ -180,11 +134,9 @@ body .container .info .left-info .btn-arrow .mail {
   left: 11%;
   visibility: hidden;
 }
-
 body .container .info .left-info .btn-arrow .mail.activo {
   visibility: visible;
 }
-
 body .container .info .right-img {
   position: absolute;
   right: 0;
@@ -192,15 +144,48 @@ body .container .info .right-img {
   width: 40%;
   height: 100%;
 }
-
 body .container .info .right-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1080px) {
+  body .container {
+    width: 70vw;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 990px) {
+  body .container {
+    width: 80vw;
+    height: 50vh;
+  }
+  body .container .info .left-info .title, body .container .info .left-info span {
+    font-size: 25px;
+  }
+  body .container .info .left-info p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 895px) {
+  body .container {
+    width: 80vw;
+    height: 50vh;
+  }
+  body .container .info .left-info {
+    padding: 5%;
+  }
+  body .container .info .left-info .title, body .container .info .left-info span {
+    font-size: 24px;
+    margin-top: 0;
+    width: 100%;
+  }
+  body .container .info .left-info p {
+    font-size: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
   body .container {
     margin: 0%;
     background-color: #fff;
@@ -246,15 +231,6 @@ body .container .info .right-img img {
     height: 45px;
     margin-top: -10px;
   }
-  body .container .info .left-info .btn-arrow input::-webkit-input-placeholder {
-    font-size: 13px;
-  }
-  body .container .info .left-info .btn-arrow input:-ms-input-placeholder {
-    font-size: 13px;
-  }
-  body .container .info .left-info .btn-arrow input::-ms-input-placeholder {
-    font-size: 13px;
-  }
   body .container .info .left-info .btn-arrow input::placeholder {
     font-size: 13px;
   }
@@ -262,8 +238,8 @@ body .container .info .right-img img {
     width: 17%;
     height: 45px;
     margin-top: 15px;
-    left: 73%;
-    top: 52%;
+    left: 75%;
+    top: 50%;
   }
   body .container .info .left-info .btn-arrow .clk .btn {
     height: 25px;
@@ -284,8 +260,8 @@ body .container .info .right-img img {
     position: relative;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
